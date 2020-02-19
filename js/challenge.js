@@ -1,4 +1,5 @@
 const comments = document.getElementById('list');
+const commentForm = document.getElementById('comment-form');
 const minusButton = document.getElementById('minus');
 const plusButton = document.getElementById('plus');
 const heartButton = document.getElementById('heart');
@@ -25,7 +26,7 @@ function addTarNumber (){
     counter.innerHTML = tarNumber;
 }
 document.addEventListener('DOMContentLoaded', () => {
-    comments.addEventListener('submit', (event) => {
+    commentForm.addEventListener('submit', (event) => {
         event.preventDefault();
         const ul = document.createElement('ul');
         comments.appendChild(ul);
